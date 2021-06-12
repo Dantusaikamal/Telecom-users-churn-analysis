@@ -75,78 +75,98 @@ To use this project, follow the following instructions:
    c. To configure the experiment, we must give it the dataset to use. Click on the Select from project option. 
    d. In the dialog, select the Telco-Customer-Churn.csv dataset that was uploaded in the previous step, then click Select asset.
 6. Prediction: 
-   a. 
-   
+   a. Once the dataset is read in, we need to indicate what we want the model to predict. Under the Select prediction column, find and click on the Churn row.
+   b. AutoAI will set up defaults values for the experiment based on the dataset. This includes the type of model to build, the metrics to optimize against, the test/train split, etc. You could view/change these values under Experiment settings. For now, we will accept the defaults and click the Run experiment button.
+   c. The experiment can take several minutes to run. Upon completion, you will see a message that the pipelines have been created.
 
+7. Save AutoAI model
+   a. Scroll down to see the Pipeline leaderboard. The top-performing pipeline is in the first rank.
+   b. The next step is to select the model that gives the best result by looking at the metrics. In this case, Pipeline 4 gave the best result with the metric “Accuracy (optimized)”. You can view the detailed results by clicking the corresponding pipeline from the leaderboard.
+   c. The model evaluation page will show metrics for the experiment, feature transformations performed (if any), which features contribute to the model, and more details of the pipeline.
+
+8. Deploy the model
+   a. To deploy this model, click on Save as, then Model to save.
+   b. A window opens that asks for the model name, description (optional), etc. You can accept the defaults or give your model a meaningful name/description and then click Save. 
+   c. You receive a notification to indicate that your model is saved to your project. Go back to your project main page by clicking on the project name on the navigator on the top left.
+   d. Under the Models section of the Assets page, click the name of your saved model.
+   e. To make the model available to be deployed, we need to make it available in the deployment space. Click on Promote to deployment space.
+   f. To promote an asset, the project must first be associated with a deployment space. Click Associate Deployment Space
+   
+9. Check your deployement.
+   a. If you came in through the Menu > Analyze > Analytics deployments path, click on your deployment space.
+   b. Under the Assets tab, click on the AutoAI model you just promoted.
+   c. Click Create deployment in the top-right corner.
+   d. On the Create a deployment screen, choose Online for the deployment type, give the deployment a name and an optional description, then click Create.
+   e. The deployment will show as “In progress” and switch to “Deployed” when done
+   
+10. Testing the deployed model
+   a. Click on the deployment. The deployment API reference tab shows how to use the model using Curl, Java, JavaScript, Python, and Scala. Click on the corresponding tabs to get the code snippet in the language you want to use.
+   b. To get to the built-in test tool, click the Test tab, then click on the Provide input data as JSON icon and paste the following data under Body:
+```
+json
+   {
+   "input_data":[
+      {
+         "fields":[ "customerID", "gender", "SeniorCitizen", "Partner", "Dependents", "tenure", "PhoneService", "MultipleLines", "InternetService", "OnlineSecurity", "OnlineBackup", "DeviceProtection", "TechSupport", "StreamingTV", "StreamingMovies", "Contract", "PaperlessBilling", "PaymentMethod", "MonthlyCharges", "TotalCharges"],
+         "values":[[ "7567-VHVEG", "Female", 0, "No", "No", 1, "No", "No phone service", "DSL", "No", "No", "No", "No", "No", "No", "Month-to-month", "No", "Bank transfer (automatic)", 25.25, 25.25]]
+      }
+   ]
+}
+```
+
+   c. Click the Predict button and the model will be called with the input data. The results will display in the Result window. Scroll down to the bottom of the result to see the prediction (“Yes” or a “No” for Churn). Test deployment with JSON
+
+   d. Alternatively, you can click the Provide input using form icon and input the various fields, then click Predict. Input to the fields
+
+ 
 
 
 # Usage
 [(Back to top)](#table-of-contents)
 
-This is optional and it is used to give the user info on how to use the project after installation. This could be added in the Installation section also.
+This model can be used in Telecom sector to analyse and predict the number of users that are going to churn or switch their telecom providers. Churn is quite common in telecom industry and models like these can help the telecoms to take necessary actions before they face huge consequences.
 
 # Development
 [(Back to top)](#table-of-contents)
 
-This is the place where you give instructions to developers on how to modify the code.
+We can select the model that gives the best result by looking at the metrics. In our case, Pipeline 4 gave the best result with the metric “Accuracy (optimized)”. You can view the detailed results by clicking the corresponding pipeline from the leaderboard.
 
-You could give **instructions in depth** of **how the code works** and how everything is put together.
+[map](https://raw.githubusercontent.com/Dantusaikamal/Telecom-users-churn-analysis/main/images/1.%20relationship%20map.PNG)
 
-You could also give specific instructions to how they can setup their development environment.
+If we want to know more details about a pipeline, we can go to the model evaluation page. The model evaluation page will show metrics for the experiment, feature transformations performed (if any), which features contribute to the model, and more details of the pipeline.
 
-Ideally, you should keep the README simple. If you need to add more complex explanations, use a wiki. Check out [this wiki](https://github.com/navendu-pottekkat/nsfw-filter/wiki) for inspiration.
+[pipeline](https://raw.githubusercontent.com/Dantusaikamal/Telecom-users-churn-analysis/main/images/3.%20pipeline4.PNG)
+
+We can compare each pipleline based on their Model name, accuracy, Loss, precision, recall, etc to find out the ideal pipeline.
+
+[comparision](https://raw.githubusercontent.com/Dantusaikamal/Telecom-users-churn-analysis/main/images/pipelinecomparison.PNG)
+
 
 # Contribute
 [(Back to top)](#table-of-contents)
 
-This is where you can let people know how they can **contribute** to your project. Some of the ways are given below.
+Please check Contribute.md to know how you can contribute to this project.
 
-Also this shows how you can add subsections within a section.
+Idea: You can develop a web application for taking user input for the AutoAI model.
 
 ### Sponsor
 [(Back to top)](#table-of-contents)
 
-Your project is gaining traction and it is being used by thousands of people(***with this README there will be even more***). Now it would be a good time to look for people or organisations to sponsor your project. This could be because you are not generating any revenue from your project and you require money for keeping the project alive.
-
-You could add how people can sponsor your project in this section. Add your patreon or GitHub sponsor link here for easy access.
-
-A good idea is to also display the sponsors with their organisation logos or badges to show them your love!(*Someday I will get a sponsor and I can show my love*)
+If you want to sponsor the project, do reach me out at dantusaikamal@gmail.com or click on the sponsor badge.
 
 ### Adding new features or fixing bugs
 [(Back to top)](#table-of-contents)
 
-This is to give people an idea how they can raise issues or feature requests in your projects. 
+If you find an issue in the project, open a new issue or a raise a pull request in this repository. 
 
-You could also give guidelines for submitting and issue or a pull request to your project.
-
-Personally and by standard, you should use a [issue template](https://github.com/navendu-pottekkat/nsfw-filter/blob/master/ISSUE_TEMPLATE.md) and a [pull request template](https://github.com/navendu-pottekkat/nsfw-filter/blob/master/PULL_REQ_TEMPLATE.md)(click for examples) so that when a user opens a new issue they could easily format it as per your project guidelines.
-
-You could also add contact details for people to get in touch with you regarding your project.
+You can also mail to dantusaikamal@gmail.com incase of any major issues.
 
 # License
 [(Back to top)](#table-of-contents)
 
-Adding the license to README is a good practice so that people can easily refer to it.
-
-Make sure you have added a LICENSE file in your project folder. **Shortcut:** Click add new file in your root of your repo in GitHub --> Set file name to LICENSE --> GitHub shows LICENSE templates ---> Choose the one that best suits your project!
-
-I personally add the name of the license and provide a link to it like below.
+Check out the LICENSE file in the repo.
 
 [GNU General Public License version 3](https://opensource.org/licenses/GPL-3.0)
 
-# Footer
-[(Back to top)](#table-of-contents)
 
-Let's also add a footer because I love footers and also you **can** use this to convey important info.
-
-Let's make it an image because by now you have realised that multimedia in images == cool(*please notice the subtle programming joke).
-
-So that is it... You have completed your training young grasshopper. Now it is time for you to use this ideas for your projects.
-
-Don't forget your **README Sensei**(*cool twitter handle idea*) when your project takes off with your **Awesome README**.
-
-Leave a star in GitHub, give a clap in Medium and share this guide if you found this helpful.
-
-**Now folks, the moment you've all been waiting for! The footer!**
-***[Audible gasp]***
 
