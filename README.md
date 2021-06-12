@@ -11,7 +11,8 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/Dantusaikamal/Telecom-users-churn-analysis)
 ![GitHub issues](https://img.shields.io/github/issues-raw/Dantusaikamal/Telecom-users-churn-analysis)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/Dantusaikamal/Telecom-users-churn-analysis)
-![GitHub](https://img.shields.io/github/license/Dantusaikamal/Telecom-users-churn-analysis)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 
 <!-- Describe your project in brief -->
 
