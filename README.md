@@ -19,15 +19,26 @@ Customer churn, when a customer ends their relationship with a business, is one 
 
 Customer churn is likely more costly in telecommunication sector than in other industries based on customers’ attitudes toward the sector, but companies aware of this fact can use data analytics in an effort to specifically bring down churn rates by identifying and relieving customer pain points, as well as understanding customer behavior on a deeper level.
 
+The project was developed in 4 steps:
+
+1. Create a project and AutoAI instance
+2. Set up your AutoAI environment and generate pipelines
+3. Save AutoAI model
+4. Deploy and test the model
+
+
 
 # Demo-Preview
 <!-- Add a demo for your project -->
 
-After you have written about your project, it is a good idea to have a demo/preview(**video/gif/screenshots** are good options) of your project so that people can know what to expect in your project. You could also add the demo in the previous section with the product description.
+AutoAI is a capability that automates machine learning tasks to ease the tasks of data scientists. It automatically prepares your data for modeling, chooses the best algorithm for your problem, and creates pipelines for the trained models, and it can be run in public clouds and in private clouds, including IBM Cloud Pak® for Data.
 
-Here is a random GIF as a placeholder.
+You can test the model by giving values directly in graphical interface.
 
-![Random GIF](https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif)
+![Img](https://raw.githubusercontent.com/Dantusaikamal/Telecom-users-churn-analysis/main/images/result%20values.png)
+
+Or you can also provide values in JSON format
+![JSON](https://raw.githubusercontent.com/Dantusaikamal/Telecom-users-churn-analysis/main/images/result.png)
 
 # Table of contents
 
@@ -47,23 +58,27 @@ Here is the TOC this project.
 # Installation
 [(Back to top)](#table-of-contents)
 
-*You might have noticed the **Back to top** button(if not, please notice, it's right there!). This is a good idea because it makes your README **easy to navigate.*** 
+To use this project, follow the following instructions:
 
-The first one should be how to install(how to generally use your project or set-up for editing in their machine).
+1. Create all the required services in IBM Cloud:
+    
+    a. Create a Watson studio instance
+    b. Create a Cloud object storage instance
+    c. Create Machine Learning instance
+    
+2. Create an IBM cloud pak for data project.
+3. Download the Telco-Customer-Churn.csv dataset.
+4. Upload the dataset to the analytics project by clicking on Browse and selecting the downloaded file.
+5. Set up your AutoAI environment and generate pipelines
+   a. To start the AutoAI experience, click Add to Project + from the top and select AutoAI experiment.
+   b. Name your AutoAI experiment asset and leave the default compute configuration option listed in the drop-down menu, then click Create.
+   c. To configure the experiment, we must give it the dataset to use. Click on the Select from project option. 
+   d. In the dialog, select the Telco-Customer-Churn.csv dataset that was uploaded in the previous step, then click Select asset.
+6. Prediction: 
+   a. 
+   
 
-This should give the users a concrete idea with instructions on how they can use your project repo with all the steps.
 
-Following this steps, **they should be able to run this in their device.**
-
-A method I use is after completing the README, I go through the instructions from scratch and check if it is working.
-
-Here is a sample instruction:
-
-To use this project, first clone the repo on your device using the command below:
-
-```git init```
-
-```git clone https://github.com/Dantusaikamal/Telecom-users-churn-analysis.git```
 
 # Usage
 [(Back to top)](#table-of-contents)
