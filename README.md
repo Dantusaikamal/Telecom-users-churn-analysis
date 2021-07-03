@@ -1,5 +1,4 @@
 
-
 <!-- Add banner here -->
 ![Alt Text](https://github.com/Dantusaikamal/Telecom-users-churn-analysis/blob/main/images/Teleco-analysis.gif)
 
@@ -30,7 +29,6 @@ The project was developed in 4 steps:
 
 
 # Demo-Preview
-<!-- Add a demo for your project -->
 
 AutoAI is a capability that automates machine learning tasks to ease the tasks of data scientists. It automatically prepares your data for modeling, chooses the best algorithm for your problem, and creates pipelines for the trained models, and it can be run in public clouds and in private clouds, including IBM Cloud Pak® for Data.
 
