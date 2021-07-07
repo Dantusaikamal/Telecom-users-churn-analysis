@@ -1,5 +1,3 @@
-
-<!-- Add banner here -->
 ![Alt Text](https://github.com/Dantusaikamal/Telecom-users-churn-analysis/blob/main/images/Teleco-analysis.gif)
 
 # Telecom-users-churn-analysis
@@ -52,7 +50,6 @@ Here is the TOC this project.
     - [Sponsor](#sponsor)
     - [Adding new features or fixing bugs](#adding-new-features-or-fixing-bugs)
 - [License](#license)
-- [Footer](#footer)
 
 # Installation
 [(Back to top)](#table-of-contents)
@@ -151,7 +148,8 @@ Idea: You can develop a web application for taking user input for the AutoAI mod
 ### Sponsor
 [(Back to top)](#table-of-contents)
 
-If you want to sponsor the project, do reach me out at dantusaikamal@gmail.com or click on the sponsor badge.
+If you want to sponsor the project, please donate your money to any relief funds for COVID-19 like [WHO Relief fund](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/donate) or the organizations in your own country like [PM cares fund](https://www.pmcares.gov.in/en/)
+
 
 ### Adding new features or fixing bugs
 [(Back to top)](#table-of-contents)
