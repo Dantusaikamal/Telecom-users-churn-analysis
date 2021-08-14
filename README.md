@@ -2,8 +2,6 @@
 
 # Telecom-users-churn-analysis
 
-<!-- Add buttons here -->
-
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Dantusaikamal/Telecom-users-churn-analysis?include_prereleases)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Dantusaikamal/Telecom-users-churn-analysis)
 ![GitHub issues](https://img.shields.io/github/issues-raw/Dantusaikamal/Telecom-users-churn-analysis)
