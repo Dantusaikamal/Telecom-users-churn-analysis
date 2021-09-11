@@ -125,15 +125,15 @@ This model can be used in Telecom sector to analyse and predict the number of us
 
 We can select the model that gives the best result by looking at the metrics. In our case, Pipeline 4 gave the best result with the metric “Accuracy (optimized)”. You can view the detailed results by clicking the corresponding pipeline from the leaderboard.
 
-[map](https://raw.githubusercontent.com/Dantusaikamal/Telecom-users-churn-analysis/main/images/1.%20relationship%20map.PNG)
+![map](https://raw.githubusercontent.com/Dantusaikamal/Telecom-users-churn-analysis/main/images/1.%20relationship%20map.PNG)
 
 If we want to know more details about a pipeline, we can go to the model evaluation page. The model evaluation page will show metrics for the experiment, feature transformations performed (if any), which features contribute to the model, and more details of the pipeline.
 
-[pipeline](https://raw.githubusercontent.com/Dantusaikamal/Telecom-users-churn-analysis/main/images/3.%20pipeline4.PNG)
+![pipeline](https://raw.githubusercontent.com/Dantusaikamal/Telecom-users-churn-analysis/main/images/3.%20pipeline4.PNG)
 
 We can compare each pipleline based on their Model name, accuracy, Loss, precision, recall, etc to find out the ideal pipeline.
 
-[comparision](https://raw.githubusercontent.com/Dantusaikamal/Telecom-users-churn-analysis/main/images/pipelinecomparison.PNG)
+![comparision](https://raw.githubusercontent.com/Dantusaikamal/Telecom-users-churn-analysis/main/images/pipelinecomparison.PNG)
 
 
 # Contribute
