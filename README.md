@@ -49,10 +49,10 @@ Here is the TOC this project.
     - [Adding new features or fixing bugs](#adding-new-features-or-fixing-bugs)
 - [License](#license)
 
-# Installation
+# Implementation
 [(Back to top)](#table-of-contents)
 
-To use this project, follow the following instructions:
+To create this project, follow the following instructions:
 
 1. Create all the required services in IBM Cloud:
     
