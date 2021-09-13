@@ -154,7 +154,7 @@ If you want to sponsor the project, please donate your money to any relief funds
 
 If you find an issue in the project, open a new issue or a raise a pull request in this repository. 
 
-You can also mail to dantusaikamal@gmail.com incase of any major issues.
+You can also mail to dantusaikamal@gmail.com incase of any issues.
 
 # License
 [(Back to top)](#table-of-contents)
