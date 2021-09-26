@@ -20,8 +20,6 @@ The project was developed in 4 steps:
 3. Save AutoAI model
 4. Deploy and test the model
 
-
-
 # Demo-Preview
 
 AutoAI is a capability that automates machine learning tasks to ease the tasks of data scientists. It automatically prepares your data for modeling, chooses the best algorithm for your problem, and creates pipelines for the trained models, and it can be run in public clouds and in private clouds, including IBM Cloud Pak® for Data.
