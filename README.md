@@ -108,9 +108,6 @@ json
 
    d. Alternatively, you can click the Provide input using form icon and input the various fields, then click Predict. Input to the fields
 
- 
-
-
 # Usage
 [(Back to top)](#table-of-contents)
 
