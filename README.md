@@ -26,6 +26,7 @@ AutoAI is a capability that automates machine learning tasks to ease the tasks o
 
 You can test the model by giving values directly in graphical interface.
 
+
 ![Img](https://raw.githubusercontent.com/Dantusaikamal/Telecom-users-churn-analysis/main/images/result%20values.png)
 
 Or you can also provide values in JSON format
@@ -33,7 +34,7 @@ Or you can also provide values in JSON format
 
 # Table of contents
 
-Here is the TOC this project.
+Here is the Table Of Contents for this project.
 
 - [Demo-Preview](#demo-preview)
 - [Table of contents](#table-of-contents)
